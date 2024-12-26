@@ -1,25 +1,17 @@
-// Array of students
 const students = [
-    { name: "Ali", interviewGiven: true },
-    { name: "Aisha", interviewGiven: false },
-    { name: "Ahmed", interviewGiven: true },
-    { name: "Fatima", interviewGiven: false },
-    { name: "Sara", interviewGiven: true },
+    { name: "Sameer", interviewGiven: true },
+    { name: "Mushraf", interviewGiven: false },
+    { name: "Sameer", interviewGiven: true },
+    { name: "Ahson", interviewGiven: false },
+    { name: "Daniyal", interviewGiven: true },
 ];
 
-// Filter students who didn't give the interview
-const notInterviewed = students.filter(student => !student.interviewGiven);
+//filter and map
+const notInterviewed = students.filter(s => !s.interviewGiven).map(s => ({ ...s, addedToList: true }));
 
-// Map to add them to a new list or process them
-const addedNotInterviewed = notInterviewed.map(student => ({
-    ...student,
-    addedToList: true // Adding a new property to mark them
-}));
+// Separate 
+const interviewed = students.filter(s => s.interviewGiven);
 
-console.log("Students who didn't give the interview:", addedNotInterviewed);
+console.log("Not Interviewed (Added):", notInterviewed);
+console.log("Interviewed:", interviewed);
 
-// Separate the students who have given the interview
-const interviewed = students.filter(student => student.interviewGiven);
-
-console.log("Students who gave the interview:", interviewed);
-//this is none
