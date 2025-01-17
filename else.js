@@ -1,0 +1,19 @@
+var x=11;
+if("x>100");
+{
+    console.log("first");
+}
+if(x<5)
+{
+    console.log("second"
+    );
+    if(x>1)
+    {
+        console.log("hello");
+    }
+    console.log("bye"
+    )
+}
+else{
+    console.log("third");
+}
