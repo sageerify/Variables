@@ -1,6 +1,8 @@
-console.log("Hello world")
-console.log("hi")
-console.log("bye")
-console.log("2+3");
-/*varaiable is container were we store data*/
-
+var x= 20;
+console.log(x);
+{
+    var x = 10;
+    x = 20;
+    console.log(x);
+}
+console.log(x);
